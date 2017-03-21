@@ -1,0 +1,93 @@
+html, body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+@media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+.app>p {
+	color: seashell;
+	font-size: 20px;
+	margin: 20px 20px 20px 20px;
+	line-height: 1.5;
+}
+
+.navi {
+	width: 180px;
+	text-align: left;
+	margin-top: 10px;
+}
+.navi>button {
+	border-width: 0;
+	color: seashell;
+	background-color: transparent;
+	font-size: 32px;
+}
+.navi>button:focus {
+	outline: none;
+}
+
+.blocks {
+	text-align: center;
+}
+.blocks>h2 {
+	font-size: 40px;
+	color: seashell;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.block {
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	margin: 5px 5px 5px 5px;
+	vertical-align: top
+}
+.block .cover {
+	width: 300px;
+	height: 250px;
+	background-color: #303030;
+	opacity: 0.9;
+	position: relative;
+	bottom: 250px;
+	left: 0;
+	line-height: 250px;
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	color: seashell;
+	cursor: default;
+  	-webkit-transition: opacity 0.3s ease-out;
+  	transition: opacity 0.3s ease-out;
+  	pointer-events: none;
+}
+.block:hover .cover {
+	opacity: 0;
+}
+.block .project {
+	width: 300px;
+	height: 250px;
+	text-align: center;
+	line-height: 1.5;
+	color: #59595A;
+}
+.block .project .title {
+	font-size: 26px;
+	font-weight: bold;
+	cursor: default;
+}
+.block .project>a {
+	margin-left: 10px;
+	text-decoration: none;
+	color: #59595A;
+}
+.block .project>a:hover {
+	color: #99999A;
+}
+.block .project #link {
+	margin-left: 0px;
+}
