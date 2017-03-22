@@ -5,20 +5,38 @@ html, body {
 	background-color: black;
 }
 
-@media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media only screen and (min-width:1025px) {
+ /* big landscape tablets, laptops, and desktops */ 
+ 	.app {
+ 		overflow: hidden;
+ 	}
+ 	.app>p {
+		width: calc(100% - 250px);
+		float: right;
+ 	}
+
+	.navi {
+		float: left;
+		margin-right: 70px;
+	}
+
+	.blocks {
+		text-align: left !important;
+		float: right;
+		width: calc(100% - 250px);
+	}
+}
 
 .app>p {
 	color: seashell;
 	font-size: 20px;
 	margin: 20px 20px 20px 20px;
-	line-height: 1.5;
 }
 
 .navi {
 	width: 180px;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 .navi>button {
 	border-width: 0;
@@ -37,7 +55,7 @@ html, body {
 	font-size: 40px;
 	color: seashell;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 }
 .block {

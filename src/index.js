@@ -24,7 +24,11 @@ class App extends React.Component{
 				show = <Block />;
 				break;
 			case 'aboutme':
-				show = <p>{me}</p>;
+				show = me.map((val, idx) => {
+					return (
+						<p key={idx}>{val}</p>
+					);
+				});
 				break;
 			case 'resume':
 				show = <embed src='./src/data/SYHwang_Resume_en.pdf' width='500' height='700' />
