@@ -6,6 +6,13 @@
 
 	.navi {
 		top: 200px;
+		width: 200px;
+		line-height: 1.2;
+		position: absolute;
+		left: 25px;
+	}
+	.navi>a {
+		font-size: 20px;
 	}
 
 	#projects .block {
@@ -21,7 +28,14 @@
 	}
 
 	.navi {
-		top: 50px;
+		width: 40%;
+		line-height: 1.5;
+		position: absolute;
+		left: 15%;
+		top: 15%;
+	}
+	.navi>a {
+		font-size: 60px;
 	}
 
 	#projects {
@@ -78,16 +92,11 @@ html, body, #main {
 }
 
 .navi {
-	width: 200px;
 	height: 0;
-	line-height: 1.2;
-	position: absolute;
-	left: 25px;
 }
 .navi>a {
 	display: block;
 	color: gainsboro;
-	font-size: 20px;
 }
 
 #projects {
