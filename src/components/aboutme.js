@@ -1,4 +1,8 @@
 import React from 'react'
+import Scroll from 'react-scroll'
+
+var Element = Scroll.Element;
+var scroll  = Scroll.animateScroll;
 
 const me = [
 	"My name is ShihYen Hwang. I have a master degree in Computer Science and currently focus on website front-end development.",
@@ -9,6 +13,10 @@ const me = [
 
 class AboutMe extends React.Component{
 
+	scrollToTop () {
+		scroll.scrollToTop();
+	}
+
 	render () {
 		let show = me.map((val, idx) => {
 			return (
@@ -16,10 +24,10 @@ class AboutMe extends React.Component{
 			);
 		});
 		return(
-			<div id='aboutme'>
-				<a id='return' href='#app'>Return</a>
+			<Element name='aboutme' className='element' id='aboutme'>
+				<a id='return' onClick={this.scrollToTop.bind(this)}>Return</a>
 				{show}
-			</div>
+			</Element>
 		);
 	}
 }

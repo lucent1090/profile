@@ -11,7 +11,7 @@
 		position: absolute;
 		left: 25px;
 	}
-	.navi>a {
+	.navi>.scroll {
 		font-size: 20px;
 	}
 
@@ -34,7 +34,7 @@
 		left: 15%;
 		top: 15%;
 	}
-	.navi>a {
+	.navi>.scroll {
 		font-size: 60px;
 	}
 
@@ -79,9 +79,8 @@ html, body, #main {
     right: -100%;
     top: -100%;
     bottom: -100%;
-
     opacity: 0.2;
-    pointer-events: none;*/
+    pointer-events: none;
 }
 .intro>h1 {
 	position: absolute;
@@ -94,20 +93,24 @@ html, body, #main {
 .navi {
 	height: 0;
 }
-.navi>a {
+.navi>.scroll {
 	display: block;
 	color: gainsboro;
+	cursor: default;
+}
+.navi>.scroll:hover, .scroll:active {
+	color: white;
 }
 
 #projects {
 	background-color: darkslategray;
-	
 }
 #return {
 	font-size: 12px;
 	color: gainsboro;
 	margin-top: 10px;
 	margin-left: 10px;
+	cursor: default;
 }
 #projects>h2 {
 	font-size: 24px;

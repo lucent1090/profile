@@ -1,4 +1,8 @@
 import React from 'react'
+import Scroll from 'react-scroll'
+
+var Element = Scroll.Element;
+var scroll  = Scroll.animateScroll;
 
 const projects = [
 	{
@@ -32,6 +36,10 @@ const projects = [
 ];
 
 class Project extends React.Component{
+	
+	scrollToTop () {
+		scroll.scrollToTop();
+	}
 
 	render () {
 		let showBlocks = projects.map((val, idx) => {
@@ -53,11 +61,11 @@ class Project extends React.Component{
 		});
 
 		return(
-			<div id='projects'>
-				<a id='return' href='#app'>Return</a>
+			<Element name='projects' className='element' id='projects'>
+				<a id='return' onClick={this.scrollToTop.bind(this)}>Return</a>
 				<h2>Projects</h2>
 				{showBlocks}
-			</div>
+			</Element>
 		);
 	}
 }
